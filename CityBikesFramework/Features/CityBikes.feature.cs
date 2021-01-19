@@ -78,6 +78,9 @@ namespace CityBikesFramework.Features
         {
 #line 5
 #line hidden
+#line 6
+    testRunner.Given("I access the city bikes endpoint http://api.citybik.es/", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
@@ -89,7 +92,7 @@ namespace CityBikesFramework.Features
                     "mytag"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify that Content type of City bike API is application/json", null, tagsOfScenario, argumentsOfScenario);
-#line 9
+#line 10
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -113,10 +116,212 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 11
- testRunner.Given("I access the city bikes endpoint", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.When("I only enter resource /v2/networks", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 12
- testRunner.Given("I get a valid response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Then("I get a valid response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 13
+ testRunner.And("API return content type as application/json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Verify that the city Frankfurt is in Germany")]
+        public virtual void VerifyThatTheCityFrankfurtIsInGermany()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify that the city Frankfurt is in Germany", null, tagsOfScenario, argumentsOfScenario);
+#line 16
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 5
+this.FeatureBackground();
+#line hidden
+#line 17
+ testRunner.When("I enter resource /v2/networks/visa-frankfurt and Query parameters id,name,href,lo" +
+                        "cation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 18
+    testRunner.Then("I get a valid response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 19
+ testRunner.And("API return content type as application/json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                            "ID",
+                            "NAME",
+                            "HREF",
+                            "CITY",
+                            "COUNTRY",
+                            "LATITUDE",
+                            "LONGITUDE"});
+                table1.AddRow(new string[] {
+                            "visa-frankfurt",
+                            "VISA",
+                            "/v2/networks/visa-frankfurt",
+                            "Frankfurt",
+                            "DE",
+                            "50.1072",
+                            "8.6638"});
+#line 20
+ testRunner.And("Response Contain the following values", ((string)(null)), table1, "And ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Verify that the API return all the stations in city of Frankfurt in Germany")]
+        public virtual void VerifyThatTheAPIReturnAllTheStationsInCityOfFrankfurtInGermany()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify that the API return all the stations in city of Frankfurt in Germany", null, tagsOfScenario, argumentsOfScenario);
+#line 25
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 5
+this.FeatureBackground();
+#line hidden
+#line 26
+ testRunner.When("I enter resource /v2/networks/visa-frankfurt and Query parameters id,name,href,lo" +
+                        "cation,stations", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 27
+    testRunner.Then("I get a valid response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 28
+ testRunner.And("API return content type as application/json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                            "ID",
+                            "NAME",
+                            "HREF",
+                            "CITY",
+                            "COUNTRY",
+                            "LATITUDE",
+                            "LONGITUDE"});
+                table2.AddRow(new string[] {
+                            "visa-frankfurt",
+                            "VISA",
+                            "/v2/networks/visa-frankfurt",
+                            "Frankfurt",
+                            "DE",
+                            "50.1072",
+                            "8.6638"});
+#line 29
+ testRunner.And("Response Contain the following values and 97 stations", ((string)(null)), table2, "And ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Verify that the API return all the stations in different cities of world")]
+        [NUnit.Framework.TestCaseAttribute("/v2/networks/visa-frankfurt", "97", "visa-frankfurt", "VISA", "Frankfurt", "DE", "50.1072", "8.6638", null)]
+        [NUnit.Framework.TestCaseAttribute("/v2/networks/nextbike-london", "1", "nextbike-london", "Nextbike", "London", "GB", "51.4862", "-0.1197", null)]
+        [NUnit.Framework.TestCaseAttribute("/v2/networks/santander-cycles", "788", "santander-cycles", "Santander Cycles", "London", "GB", "51.5112", "-0.1198", null)]
+        public virtual void VerifyThatTheAPIReturnAllTheStationsInDifferentCitiesOfWorld(string networkEndPoint, string noOfStations, string iD, string nAME, string cITY, string cOUNTRY, string lATITUDE, string lONGITUDE, string[] exampleTags)
+        {
+            string[] tagsOfScenario = exampleTags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("Network EndPoint", networkEndPoint);
+            argumentsOfScenario.Add("No of Stations", noOfStations);
+            argumentsOfScenario.Add("ID", iD);
+            argumentsOfScenario.Add("NAME", nAME);
+            argumentsOfScenario.Add("CITY", cITY);
+            argumentsOfScenario.Add("COUNTRY", cOUNTRY);
+            argumentsOfScenario.Add("LATITUDE", lATITUDE);
+            argumentsOfScenario.Add("LONGITUDE", lONGITUDE);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify that the API return all the stations in different cities of world", null, tagsOfScenario, argumentsOfScenario);
+#line 35
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 5
+this.FeatureBackground();
+#line hidden
+#line 36
+ testRunner.When(string.Format("I enter resource {0} and Query parameters id,name,href,location,stations", networkEndPoint), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 37
+    testRunner.Then("I get a valid response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 38
+ testRunner.And("API return content type as application/json", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                            "ID",
+                            "NAME",
+                            "HREF",
+                            "CITY",
+                            "COUNTRY",
+                            "LATITUDE",
+                            "LONGITUDE"});
+                table3.AddRow(new string[] {
+                            string.Format("{0}", iD),
+                            string.Format("{0}", nAME),
+                            string.Format("{0}", networkEndPoint),
+                            string.Format("{0}", cITY),
+                            string.Format("{0}", cOUNTRY),
+                            string.Format("{0}", lATITUDE),
+                            string.Format("{0}", lONGITUDE)});
+#line 39
+ testRunner.And(string.Format("Response Contain the following values and {0} stations", noOfStations), ((string)(null)), table3, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
