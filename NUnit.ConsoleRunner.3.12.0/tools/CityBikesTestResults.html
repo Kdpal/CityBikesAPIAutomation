@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="12" result="Passed" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="65" engine-version="3.12.0.0" clr-version="4.0.30319.42000" start-time="2021-01-19 17:47:13Z" end-time="2021-01-19 17:47:19Z" duration="6.242554">
+  <command-line><![CDATA["C:\Users\kdpal\source\repos\CityBikes\packages\NUnit.ConsoleRunner.3.12.0\tools\nunit3-console.exe" C:\Users\kdpal\source\repos\CityBikes\CityBikesFramework\bin\Debug\CityBikesFramework.dll /result:CityBikesTestResults.html]]></command-line>
+  <test-suite type="Assembly" id="1-1019" name="CityBikesFramework.dll" fullname="CityBikesFramework.dll" runstate="Runnable" testcasecount="12" result="Passed" start-time="2021-01-19 17:47:14Z" end-time="2021-01-19 17:47:19Z" duration="5.391238" total="12" passed="12" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="65">
+    <environment framework-version="3.11.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.19042.0" platform="Win32NT" cwd="C:\Users\kdpal\source\repos\CityBikes\packages\NUnit.ConsoleRunner.3.12.0\tools" machine-name="KDPAL-SONY" user="kdpal" user-domain="KDPAL-SONY" culture="en-PK" uiculture="en-GB" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\kdpal\source\repos\CityBikes\packages\NUnit.ConsoleRunner.3.12.0\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.8" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="TargetRuntimeFramework" value="net-4.0" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="15968" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <test-suite type="SetUpFixture" id="1-1000" name="[default namespace]" fullname="CityBikesFramework_NUnitAssemblyHooks" classname="CityBikesFramework_NUnitAssemblyHooks" runstate="Runnable" testcasecount="12" result="Passed" start-time="2021-01-19 17:47:14Z" end-time="2021-01-19 17:47:19Z" duration="5.361401" total="12" passed="12" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="65">
+      <output><![CDATA[-> Loading plugin C:\Users\kdpal\source\repos\CityBikes\CityBikesFramework\bin\Debug\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+-> Using app.config
+]]></output>
+      <test-suite type="TestSuite" id="1-1020" name="CityBikesFramework" fullname="CityBikesFramework" runstate="Runnable" testcasecount="12" result="Passed" start-time="2021-01-19 17:47:15Z" end-time="2021-01-19 17:47:19Z" duration="4.305671" total="12" passed="12" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="65">
+        <test-suite type="TestSuite" id="1-1021" name="Features" fullname="CityBikesFramework.Features" runstate="Runnable" testcasecount="6" result="Passed" start-time="2021-01-19 17:47:15Z" end-time="2021-01-19 17:47:19Z" duration="3.469096" total="6" passed="6" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="51">
+          <test-suite type="TestFixture" id="1-1001" name="CityBikesFeature" fullname="CityBikesFramework.Features.CityBikesFeature" classname="CityBikesFramework.Features.CityBikesFeature" runstate="Runnable" testcasecount="6" result="Passed" start-time="2021-01-19 17:47:15Z" end-time="2021-01-19 17:47:19Z" duration="3.469016" total="6" passed="6" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="51">
+            <properties>
+              <property name="Description" value="CityBikes" />
+            </properties>
+            <test-case id="1-1002" name="VerifyThatContentTypeOfCityBikeAPIIsApplicationJson" fullname="CityBikesFramework.Features.CityBikesFeature.VerifyThatContentTypeOfCityBikeAPIIsApplicationJson" methodname="VerifyThatContentTypeOfCityBikeAPIIsApplicationJson" classname="CityBikesFramework.Features.CityBikesFeature" runstate="Runnable" seed="727535926" result="Passed" start-time="2021-01-19 17:47:15Z" end-time="2021-01-19 17:47:16Z" duration="1.042694" asserts="2">
+              <properties>
+                <property name="Description" value="Verify that Content type of City bike API is application/json" />
+                <property name="Category" value="mytag" />
+              </properties>
+              <output><![CDATA[Given I access the city bikes endpoint http://api.citybik.es/
+-> done: CityBikesStepDefinition.GivenIAccessTheCityBikesEndpoint("http://api.citybi...") (0.0s)
+When I only enter resource /v2/networks
+-> done: CityBikesStepDefinition.GivenIOnlyEnterResource("/v2/networks") (0.9s)
+Then I get a valid response
+-> done: CityBikesStepDefinition.GivenIGetAValidResponse() (0.0s)
+And API return content type as application/json
+-> done: CityBikesStepDefinition.ThenAPIReturnContentTypeAs("application/json") (0.0s)
+]]></output>
+            </test-case>
+            <test-case id="1-1004" name="VerifyThatTheAPIReturnAllTheStationsInCityOfFrankfurtInGermany" fullname="CityBikesFramework.Features.CityBikesFeature.VerifyThatTheAPIReturnAllTheStationsInCityOfFrankfurtInGermany" methodname="VerifyThatTheAPIReturnAllTheStationsInCityOfFrankfurtInGermany" classname="CityBikesFramework.Features.CityBikesFeature" runstate="Runnable" seed="1005843032" result="Passed" start-time="2021-01-19 17:47:16Z" end-time="2021-01-19 17:47:17Z" duration="0.945611" asserts="10">
+              <properties>
+                <property name="Description" value="Verify that the API return all the stations in city of Frankfurt in Germany" />
+              </properties>
+              <output><![CDATA[Given I access the city bikes endpoint http://api.citybik.es/
+-> done: CityBikesStepDefinition.GivenIAccessTheCityBikesEndpoint("http://api.citybi...") (0.0s)
+When I enter resource /v2/networks/visa-frankfurt and Query parameters id,name,href,location,stations
+-> done: CityBikesStepDefinition.GivenIEnterResourceAndQueryParameters("/v2/networks/visa...", "id,name,href,loca...") (0.3s)
+Then I get a valid response
+-> done: CityBikesStepDefinition.GivenIGetAValidResponse() (0.0s)
+And API return content type as application/json
+-> done: CityBikesStepDefinition.ThenAPIReturnContentTypeAs("application/json") (0.0s)
+And Response Contain the following values and 97 stations
+  --- table step argument ---
+  | ID             | NAME | HREF                        | CITY      | COUNTRY | LATITUDE | LONGITUDE |
+  | visa-frankfurt | VISA | /v2/networks/visa-frankfurt | Frankfurt | DE      | 50.1072  | 8.6638    |
+-> done: CityBikesStepDefinition.ThenResponseContainTheFollowingValuesAndStations(97, <table>) (0.6s)
+]]></output>
+            </test-case>
+            <test-suite type="ParameterizedMethod" id="1-1008" name="VerifyThatTheAPIReturnAllTheStationsInDifferentCitiesOfWorld" fullname="CityBikesFramework.Features.CityBikesFeature.VerifyThatTheAPIReturnAllTheStationsInDifferentCitiesOfWorld" classname="CityBikesFramework.Features.CityBikesFeature" runstate="Runnable" testcasecount="3" result="Passed" start-time="2021-01-19 17:47:17Z" end-time="2021-01-19 17:47:18Z" duration="1.039759" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="30">
+              <properties>
+                <property name="Description" value="Verify that the API return all the stations in different cities of world" />
+              </properties>
+              <test-case id="1-1005" name="VerifyThatTheAPIReturnAllTheStationsInDifferentCitiesOfWorld(&quot;/v2/networks/visa-frankfurt&quot;,&quot;97&quot;,&quot;visa-frankfurt&quot;,&quot;VISA&quot;,&quot;Frankfurt&quot;,&quot;DE&quot;,&quot;50.1072&quot;,&quot;8.6638&quot;,null)" fullname="CityBikesFramework.Features.CityBikesFeature.VerifyThatTheAPIReturnAllTheStationsInDifferentCitiesOfWorld(&quot;/v2/networks/visa-frankfurt&quot;,&quot;97&quot;,&quot;visa-frankfurt&quot;,&quot;VISA&quot;,&quot;Frankfurt&quot;,&quot;DE&quot;,&quot;50.1072&quot;,&quot;8.6638&quot;,null)" methodname="VerifyThatTheAPIReturnAllTheStationsInDifferentCitiesOfWorld" classname="CityBikesFramework.Features.CityBikesFeature" runstate="Runnable" seed="1321391197" result="Passed" start-time="2021-01-19 17:47:17Z" end-time="2021-01-19 17:47:17Z" duration="0.067207" asserts="10">
+                <output><![CDATA[Given I access the city bikes endpoint http://api.citybik.es/
+-> done: CityBikesStepDefinition.GivenIAccessTheCityBikesEndpoint("http://api.citybi...") (0.0s)
+When I enter resource /v2/networks/visa-frankfurt and Query parameters id,name,href,location,stations
+-> done: CityBikesStepDefinition.GivenIEnterResourceAndQueryParameters("/v2/networks/visa...", "id,name,href,loca...") (0.0s)
+Then I get a valid response
+-> done: CityBikesStepDefinition.GivenIGetAValidResponse() (0.0s)
+And API return content type as application/json
+-> done: CityBikesStepDefinition.ThenAPIReturnContentTypeAs("application/json") (0.0s)
+And Response Contain the following values and 97 stations
+  --- table step argument ---
+  | ID             | NAME | HREF                        | CITY      | COUNTRY | LATITUDE | LONGITUDE |
+  | visa-frankfurt | VISA | /v2/networks/visa-frankfurt | Frankfurt | DE      | 50.1072  | 8.6638    |
+-> done: CityBikesStepDefinition.ThenResponseContainTheFollowingValuesAndStations(97, <table>) (0.0s)
+]]></output>
+              </test-case>
+              <test-case id="1-1006" name="VerifyThatTheAPIReturnAllTheStationsInDifferentCitiesOfWorld(&quot;/v2/networks/nextbike-london&quot;,&quot;1&quot;,&quot;nextbike-london&quot;,&quot;Nextbike&quot;,&quot;London&quot;,&quot;GB&quot;,&quot;51.4862&quot;,&quot;-0.1197&quot;,null)" fullname="CityBikesFramework.Features.CityBikesFeature.VerifyThatTheAPIReturnAllTheStationsInDifferentCitiesOfWorld(&quot;/v2/networks/nextbike-london&quot;,&quot;1&quot;,&quot;nextbike-london&quot;,&quot;Nextbike&quot;,&quot;London&quot;,&quot;GB&quot;,&quot;51.4862&quot;,&quot;-0.1197&quot;,null)" methodname="VerifyThatTheAPIReturnAllTheStationsInDifferentCitiesOfWorld" classname="CityBikesFramework.Features.CityBikesFeature" runstate="Runnable" seed="807563301" result="Passed" start-time="2021-01-19 17:47:17Z" end-time="2021-01-19 17:47:17Z" duration="0.067316" asserts="10">
+                <output><![CDATA[Given I access the city bikes endpoint http://api.citybik.es/
+-> done: CityBikesStepDefinition.GivenIAccessTheCityBikesEndpoint("http://api.citybi...") (0.0s)
+When I enter resource /v2/networks/nextbike-london and Query parameters id,name,href,location,stations
+-> done: CityBikesStepDefinition.GivenIEnterResourceAndQueryParameters("/v2/networks/next...", "id,name,href,loca...") (0.1s)
+Then I get a valid response
+-> done: CityBikesStepDefinition.GivenIGetAValidResponse() (0.0s)
+And API return content type as application/json
+-> done: CityBikesStepDefinition.ThenAPIReturnContentTypeAs("application/json") (0.0s)
+And Response Contain the following values and 1 stations
+  --- table step argument ---
+  | ID              | NAME     | HREF                         | CITY   | COUNTRY | LATITUDE | LONGITUDE |
+  | nextbike-london | Nextbike | /v2/networks/nextbike-london | London | GB      | 51.4862  | -0.1197   |
+-> done: CityBikesStepDefinition.ThenResponseContainTheFollowingValuesAndStations(1, <table>) (0.0s)
+]]></output>
+              </test-case>
+              <test-case id="1-1007" name="VerifyThatTheAPIReturnAllTheStationsInDifferentCitiesOfWorld(&quot;/v2/networks/santander-cycles&quot;,&quot;788&quot;,&quot;santander-cycles&quot;,&quot;Santander Cycles&quot;,&quot;London&quot;,&quot;GB&quot;,&quot;51.5112&quot;,&quot;-0.1198&quot;,null)" fullname="CityBikesFramework.Features.CityBikesFeature.VerifyThatTheAPIReturnAllTheStationsInDifferentCitiesOfWorld(&quot;/v2/networks/santander-cycles&quot;,&quot;788&quot;,&quot;santander-cycles&quot;,&quot;Santander Cycles&quot;,&quot;London&quot;,&quot;GB&quot;,&quot;51.5112&quot;,&quot;-0.1198&quot;,null)" methodname="VerifyThatTheAPIReturnAllTheStationsInDifferentCitiesOfWorld" classname="CityBikesFramework.Features.CityBikesFeature" runstate="Runnable" seed="1530573884" result="Passed" start-time="2021-01-19 17:47:17Z" end-time="2021-01-19 17:47:18Z" duration="0.902269" asserts="10">
+                <output><![CDATA[Given I access the city bikes endpoint http://api.citybik.es/
+-> done: CityBikesStepDefinition.GivenIAccessTheCityBikesEndpoint("http://api.citybi...") (0.0s)
+When I enter resource /v2/networks/santander-cycles and Query parameters id,name,href,location,stations
+-> done: CityBikesStepDefinition.GivenIEnterResourceAndQueryParameters("/v2/networks/sant...", "id,name,href,loca...") (0.6s)
+Then I get a valid response
+-> done: CityBikesStepDefinition.GivenIGetAValidResponse() (0.0s)
+And API return content type as application/json
+-> done: CityBikesStepDefinition.ThenAPIReturnContentTypeAs("application/json") (0.0s)
+And Response Contain the following values and 788 stations
+  --- table step argument ---
+  | ID               | NAME             | HREF                          | CITY   | COUNTRY | LATITUDE | LONGITUDE |
+  | santander-cycles | Santander Cycles | /v2/networks/santander-cycles | London | GB      | 51.5112  | -0.1198   |
+-> done: CityBikesStepDefinition.ThenResponseContainTheFollowingValuesAndStations(788, <table>) (0.3s)
+]]></output>
+              </test-case>
+            </test-suite>
+            <test-case id="1-1003" name="VerifyThatTheCityFrankfurtIsInGermany" fullname="CityBikesFramework.Features.CityBikesFeature.VerifyThatTheCityFrankfurtIsInGermany" methodname="VerifyThatTheCityFrankfurtIsInGermany" classname="CityBikesFramework.Features.CityBikesFeature" runstate="Runnable" seed="861338071" result="Passed" start-time="2021-01-19 17:47:18Z" end-time="2021-01-19 17:47:19Z" duration="0.428284" asserts="9">
+              <properties>
+                <property name="Description" value="Verify that the city Frankfurt is in Germany" />
+              </properties>
+              <output><![CDATA[Given I access the city bikes endpoint http://api.citybik.es/
+-> done: CityBikesStepDefinition.GivenIAccessTheCityBikesEndpoint("http://api.citybi...") (0.0s)
+When I enter resource /v2/networks/visa-frankfurt and Query parameters id,name,href,location
+-> done: CityBikesStepDefinition.GivenIEnterResourceAndQueryParameters("/v2/networks/visa...", "id,name,href,loca...") (0.4s)
+Then I get a valid response
+-> done: CityBikesStepDefinition.GivenIGetAValidResponse() (0.0s)
+And API return content type as application/json
+-> done: CityBikesStepDefinition.ThenAPIReturnContentTypeAs("application/json") (0.0s)
+And Response Contain the following values
+  --- table step argument ---
+  | ID             | NAME | HREF                        | CITY      | COUNTRY | LATITUDE | LONGITUDE |
+  | visa-frankfurt | VISA | /v2/networks/visa-frankfurt | Frankfurt | DE      | 50.1072  | 8.6638    |
+-> done: CityBikesStepDefinition.ThenResponseContainTheFollowingValues(<table>) (0.0s)
+]]></output>
+            </test-case>
+          </test-suite>
+        </test-suite>
+        <test-suite type="TestSuite" id="1-1022" name="UnitTests" fullname="CityBikesFramework.UnitTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2021-01-19 17:47:15Z" end-time="2021-01-19 17:47:19Z" duration="4.305616" total="6" passed="6" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="14">
+          <test-suite type="TestFixture" id="1-1009" name="BasicTests" fullname="CityBikesFramework.UnitTests.BasicTests" classname="CityBikesFramework.UnitTests.BasicTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2021-01-19 17:47:19Z" end-time="2021-01-19 17:47:19Z" duration="0.139919" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+            <test-case id="1-1010" name="ContentTypeTest" fullname="CityBikesFramework.UnitTests.BasicTests.ContentTypeTest" methodname="ContentTypeTest" classname="CityBikesFramework.UnitTests.BasicTests" runstate="Runnable" seed="756499599" result="Passed" start-time="2021-01-19 17:47:19Z" end-time="2021-01-19 17:47:19Z" duration="0.139723" asserts="1" />
+          </test-suite>
+          <test-suite type="TestFixture" id="1-1011" name="DataDrivenTests" fullname="CityBikesFramework.UnitTests.DataDrivenTests" classname="CityBikesFramework.UnitTests.DataDrivenTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2021-01-19 17:47:19Z" end-time="2021-01-19 17:47:19Z" duration="0.304681" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+            <test-suite type="ParameterizedMethod" id="1-1015" name="StatusCodeTest" fullname="CityBikesFramework.UnitTests.DataDrivenTests.StatusCodeTest" classname="CityBikesFramework.UnitTests.DataDrivenTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2021-01-19 17:47:19Z" end-time="2021-01-19 17:47:19Z" duration="0.304525" total="3" passed="3" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="3">
+              <test-case id="1-1012" name="Check status code for First EndPoint" fullname="CityBikesFramework.UnitTests.DataDrivenTests.Check status code for First EndPoint" methodname="StatusCodeTest" classname="CityBikesFramework.UnitTests.DataDrivenTests" runstate="Runnable" seed="1192298723" result="Passed" start-time="2021-01-19 17:47:19Z" end-time="2021-01-19 17:47:19Z" duration="0.100456" asserts="1" />
+              <test-case id="1-1013" name="Check status code for Second EndPoint" fullname="CityBikesFramework.UnitTests.DataDrivenTests.Check status code for Second EndPoint" methodname="StatusCodeTest" classname="CityBikesFramework.UnitTests.DataDrivenTests" runstate="Runnable" seed="1317812636" result="Passed" start-time="2021-01-19 17:47:19Z" end-time="2021-01-19 17:47:19Z" duration="0.186446" asserts="1" />
+              <test-case id="1-1014" name="Check status code for invalid EndPoint" fullname="CityBikesFramework.UnitTests.DataDrivenTests.Check status code for invalid EndPoint" methodname="StatusCodeTest" classname="CityBikesFramework.UnitTests.DataDrivenTests" runstate="Runnable" seed="2042375770" result="Passed" start-time="2021-01-19 17:47:19Z" end-time="2021-01-19 17:47:19Z" duration="0.017461" asserts="1" />
+            </test-suite>
+          </test-suite>
+          <test-suite type="TestFixture" id="1-1016" name="DeserializationTests" fullname="CityBikesFramework.UnitTests.DeserializationTests" classname="CityBikesFramework.UnitTests.DeserializationTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2021-01-19 17:47:19Z" end-time="2021-01-19 17:47:19Z" duration="0.388693" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="10">
+            <test-case id="1-1017" name="FrankfurtCityTest" fullname="CityBikesFramework.UnitTests.DeserializationTests.FrankfurtCityTest" methodname="FrankfurtCityTest" classname="CityBikesFramework.UnitTests.DeserializationTests" runstate="Runnable" seed="1626483556" result="Passed" start-time="2021-01-19 17:47:19Z" end-time="2021-01-19 17:47:19Z" duration="0.085933" asserts="7" />
+            <test-case id="1-1018" name="NetworksGenericTest" fullname="CityBikesFramework.UnitTests.DeserializationTests.NetworksGenericTest" methodname="NetworksGenericTest" classname="CityBikesFramework.UnitTests.DeserializationTests" runstate="Runnable" seed="1553648279" result="Passed" start-time="2021-01-19 17:47:19Z" end-time="2021-01-19 17:47:19Z" duration="0.302554" asserts="3" />
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
