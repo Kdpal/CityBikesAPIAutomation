@@ -1,5 +1,24 @@
-Download And Unzip
-------------------
+CityBikes API Automation Problem Statement
+------------------------------------------
+------------------------------------------
+
+As a biker I would like to know the exact location of city bikes around the world in a given application.
+
+-- Endpoint: http://api.citybik.es/v2/networks
+-- Auth: No
+-- HTTPS: No
+-- Understands how the API works.
+-- Create some BDD scenarios and automate them using Java to test the API
+-- Test this particular scenario: “As a user I want to verify that the city Frankfurt is in Germany and return their corresponded latitude and longitude”
+
+------------------------------------------
+------------------------------------------
+
+
+
+Solution download and Unzip
+----------------------------
+
 1- GoTo the following URL 
 https://github.com/Kdpal/CityBikesAPIAutomation.git
 2- Click the Green 'Code' button and chose the 'Download Zip' option
@@ -13,9 +32,11 @@ e.g. C:\Downloads\CityBikesAPIAutomation-main will contain the following
 5. Next we will see different options to run the APIAutomation tests.
 
 
+
 Option 1 Running NUnit tests via Command Line 
 ---------------------------------------------
-The zip file contains few Assemblies which are precompiled and can be used with NUnit Console Runner to execute the 12 tests cases without using IDE
+
+The zip file contains  Assemblies which can be used with NUnit Console Runner to execute the tests cases without using IDE
 
 1. Open Command prompt or Window Power Shell
 2. Navigate to the NUnitConsoleRunner3.12.0 tools folder 
@@ -35,6 +56,7 @@ e.g.
 
 Option 2 Running Nunit test via IDE i.e. Visual Studio 2019
 ------------------------------------------------------------
+
 The project is build using .Net Framework 4.8 so make sure the machine got this installed.
 Download VS 2019 Community edition or higher. Community edition is free to download
 https://visualstudio.microsoft.com/downloads/
@@ -55,16 +77,9 @@ https://visualstudio.microsoft.com/downloads/
 8. Run the test by click the play all button in the test explorer. 
 
 
-Problem Statement
------------------
-As a biker I would like to know the exact location of city bikes around the world in a given application.
-
--- Endpoint: http://api.citybik.es/v2/networks
--- Auth: No
--- HTTPS: No
--- Understands how the API works.
--- Create some BDD scenarios and automate them using Java to test the API
--- Test this particular scenario: “As a user I want to verify that the city Frankfurt is in Germany and return their corresponded latitude and longitude”
+Solution and Coding
+--------------------
+--------------------
 
 
 API Behaviour
